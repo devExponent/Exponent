@@ -3,15 +3,17 @@
 body{
   box-sizing: border-box;
   /* background-color: rgba(0, 0, 0, 0.848); */
+  background-color: #111827;
+
   
 }
 
 #background{
   
- background-image:  linear-gradient(rgba(0, 0, 0, 0.571), rgba(0, 0, 0, 0.472)),url('assets/background.jpg');
+ /* background-image:  linear-gradient(rgba(0, 0, 0, 0.571), rgba(0, 0, 0, 0.472)),url('assets/background.jpg');
     background-size: cover;     
   background-position: center;   
   background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100vh; */
 }

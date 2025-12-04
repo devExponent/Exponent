@@ -10,7 +10,7 @@ const NavBar = () => {
   }
   return (
     <>
-      <div className="text-white bg-black flex items-center py-6 px-14 justify-between z-20">
+      <div className="text-white bg-[#19294a67] flex items-center py-6 px-14 justify-between sticky top-0 shadow-xl z-50">
         <div className="">
           <h1 className="font-bold text-3xl">Okunlola Muhammad</h1>
         </div>
@@ -43,7 +43,7 @@ const NavBar = () => {
           openNavBar ? "h-96" : "h-0"
         }`}
       >
-        <ul className="flex flex-col p-6 gap-6 bg-black text-white font-bold">
+        <ul className="flex flex-col p-6 gap-6 bg-[#19294a67] text-white font-bold">
           <NavItem>Home</NavItem>
           <NavItem>Projects</NavItem>
           <NavItem>Achievements</NavItem>
