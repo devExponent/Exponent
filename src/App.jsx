@@ -21,7 +21,7 @@ function App() {
     <section id="background">
       <div>
         <Header />
-        <motion.div variants={pvariant} initial="hidden" animate="show">
+        {/* <motion.div variants={pvariant} initial="hidden" animate="show">
           <motion.p
             className="text-white my-5"
             variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
@@ -38,7 +38,7 @@ function App() {
             id, labore eligendi velit aperiam odio reiciendis quos temporibus
             atque! Autem.
           </motion.p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

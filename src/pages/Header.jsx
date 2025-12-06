@@ -25,12 +25,16 @@ const Header = () => {
               with hands-on experience in state management, server-side
               rendering, component design, and performance optimization.
             </p>
-            <div className="flex flex-row gap-4">
-              <div>
+            <div className="flex flex-row gap-4 my-2">
+              <div className="bg-gray-700 p-3 rounded-full hover:bg-gray-600 transition-colors">
                 <FaLinkedin />
               </div>
-              <FaGithub />
-              <FaTwitter />
+              <div className="bg-gray-700 p-3 rounded-full hover:bg-gray-600 transition-colors">
+                <FaGithub />
+              </div>
+              <div className="bg-gray-700 p-3 rounded-full hover:bg-gray-600 transition-colors">
+                <FaTwitter />
+              </div>
             </div>
           </div>
           <div className="order-1 md:order-2 mx-auto max-sm:mb-3">

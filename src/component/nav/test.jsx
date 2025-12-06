@@ -18,7 +18,7 @@ function ScrollLinked() {
           right: 0,
           height: 10,
           originX: 0,
-          //   backgroundColor: "#ff0088",
+          backgroundColor: "#ff0088",
         }}
       />
       <Content />
