@@ -10,7 +10,7 @@ const NavBar = () => {
   }
   return (
     <>
-      <div className="text-white bg-[#19294a67] flex items-center py-6 px-14 justify-between sticky top-0 shadow-xl z-50">
+      <div className="text-white bg-[#19294a67] flex items-center py-6 px-14 justify-between sticky top-0">
         <div className="">
           <h1 className="font-bold text-3xl">Okunlola Muhammad</h1>
         </div>
@@ -39,7 +39,7 @@ const NavBar = () => {
 
       {/* Mobile Nav */}
       <div
-        className={`md:hidden overflow-auto transition-all duration-700 ease-in-out ${
+        className={`md:hidden   overflow-auto transition-all duration-700 ease-in-out ${
           openNavBar ? "h-96" : "h-0"
         }`}
       >
