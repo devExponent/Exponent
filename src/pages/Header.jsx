@@ -1,5 +1,6 @@
 import NavBar from "../component/nav/NavBar";
 import ProfileImg from "../assets/Profile.jpeg";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -18,13 +19,19 @@ const Header = () => {
               A Frontend Software Engineer in growth mode.
             </p>
             <p>
-              I transform ideas into user-friendly and interactive web
-              applications. Continuously building practical skills in React.js,
-              modern JavaScript frameworks, and cloud technologies to create
-              responsive and data-driven interfaces.
+              I transform ideas into user-friendly, interactive web
+              applications. Continuously developing practical skills in
+              React.js, modern JavaScript frameworks, and cloud technologies,
+              with hands-on experience in state management, server-side
+              rendering, component design, and performance optimization.
             </p>
-
-            <p></p>
+            <div className="flex flex-row gap-4">
+              <div>
+                <FaLinkedin />
+              </div>
+              <FaGithub />
+              <FaTwitter />
+            </div>
           </div>
           <div className="order-1 md:order-2 mx-auto max-sm:mb-3">
             <div className="w-full aspect-square max-w-[350px] mx-auto">
