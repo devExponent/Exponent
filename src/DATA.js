@@ -1,16 +1,19 @@
+import UILogo from "../src/assets/unilorin logo.png";
+import UTULogo from "../src/assets/UTU logo.png";
 export const Education = [
   {
-    logo: "logo",
-    course: "course",
+    logo: UTULogo,
+    course: "MSc. Software Engineering",
     date: "Aug. 2025 - Ongoing",
-    institution: "name",
-    description: "description",
+    institution: "University of Turku",
+    description:
+      "descriptionfkjdndjgntrgihututdjdnjnjdjdjrututrhuitrgtrtrsgteyyuiiughbnjfbgdjbgfdjbfbgffgu",
   },
   {
-    logo: "logo",
-    course: "course",
+    logo: UILogo,
+    course: "BSc. Information and Communication Science",
     date: "Oct. 2018  -  Oct. 2023",
-    institution: "name",
+    institution: "University of Ilorin",
     description: "description",
   },
 ];
