@@ -1,6 +1,7 @@
 import ProfileImg from "../assets/Profile.jpeg";
 import SocialMediaLinks from "../component/SocialMediaLinks";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import Button from "../component/Button";
 const Aboutme = () => {
   const socialLinksStyle =
     "bg-gray-700 p-3 rounded-full hover:bg-gray-600 transition-colors";
@@ -46,6 +47,9 @@ const Aboutme = () => {
             design, and performance optimization.
           </p>
           <SocialMediaLinks links={links} />
+          <Button className="transform transition duration-300 bg-blue-400  text-white hover:scale-110 hover:bg-black ">
+            View CV
+          </Button>
         </div>
         <div className="order-1 md:order-2 max-sm:mb-3">
           <div className="w-full aspect-square max-w-[350px] mx-auto">

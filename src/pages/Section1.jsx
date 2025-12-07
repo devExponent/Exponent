@@ -5,7 +5,7 @@ const Section1 = () => {
   return (
     <section className="bg-[#19294ae1] py-8">
       <div className="w-10/12 md:w-10/12 lg:w-8/12 mx-auto text-white">
-        <h1 className="text-center text-2xl md:text-3xl lg:text-5xl flex justify-center gap-2 mb-8 font-bold text-gray-100">
+        <h1 className="text-center text-2xl md:text-3xl  lg:text-5xl flex justify-center gap-2 mb-8 font-extrabold text-white">
           <FaGraduationCap />
           My Education
         </h1>
