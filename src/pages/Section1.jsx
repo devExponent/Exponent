@@ -1,17 +1,19 @@
 import { Education } from "../DATA";
+import { FaGraduationCap } from "react-icons/fa";
 
 const Section1 = () => {
   return (
     <section className="bg-[#19294ae1] py-8">
-      <div className="w-11/12 lg:w-6/12 mx-auto text-white">
-        <h1 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-100">
+      <div className="w-10/12 md:w-10/12 lg:w-8/12 mx-auto text-white">
+        <h1 className="text-center text-2xl md:text-3xl lg:text-5xl flex justify-center gap-2 mb-8 font-bold text-gray-100">
+          <FaGraduationCap />
           My Education
         </h1>
 
         {Education.map((education, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row gap-5 items-center rounded-xl border p-3 my-5"
+            className="flex flex-col md:flex-row gap-5 items-center rounded-xl p-6 my-5 bg-[#80808028]"
           >
             <div>
               <img
@@ -21,15 +23,15 @@ const Section1 = () => {
               />
             </div>
             <div className="flex-1">
-              <div className="flex items-center justify-between w-full">
+              <div className="flex lg:items-center lg:justify-between w-full max-lg:flex-col">
                 <span className="font-bold text-xl">{education.course}</span>
-                <span>{education.date}</span>
+                <span className="font-bold">{education.date}</span>
               </div>
               <div>
                 <span className="font-extrabold text-lg">
                   {education.institution}
                 </span>
-                <p className="break-all whitespace-normal">
+                <p className="w-full lg:text-justify">
                   {education.description}
                 </p>
               </div>
