@@ -2,7 +2,6 @@ import "./App.css";
 import NavBar from "./component/nav/NavBar";
 import { motion } from "framer-motion";
 import Header from "./pages/Header";
-import Section1 from "./pages/Section1";
 
 function App() {
   const pvariant = {
@@ -22,7 +21,6 @@ function App() {
     <section id="background">
       <div>
         <Header />
-        <Section1 />
         {/* <motion.div variants={pvariant} initial="hidden" animate="show">
           <motion.p
             className="text-white my-5"
