@@ -1,58 +1,6 @@
 import { FaCode } from "react-icons/fa";
-import { FaReact, FaPython } from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiFirebase,
-  SiFramer,
-  SiJavascript,
-  SiTypescript,
-  SiNextdotjs,
-} from "react-icons/si";
-
+import { Technolgoies } from "../DATA";
 const Technologies = () => {
-  const Technolgoies = [
-    {
-      Icon: SiJavascript,
-      name: "JavaScript",
-      bgGradient: "from-yellow-400 to-orange-500",
-    },
-    {
-      Icon: FaReact,
-      name: "React",
-      bgGradient: "from-stone-400 to-blue-500",
-    },
-    {
-      Icon: SiTypescript,
-      name: "TypeScript",
-      bgGradient: "from-blue-400 to-gray-600",
-    },
-    {
-      Icon: SiNextdotjs,
-      name: "Next.js",
-      bgGradient: "from-gray-700 to-stone-600",
-    },
-    {
-      Icon: SiTailwindcss,
-      name: "Tailwind CSS",
-      bgGradient: "from-green-400 to-teal-500",
-    },
-    {
-      Icon: SiFramer,
-      name: "Framer Motion",
-      bgGradient: "from-cyan-500 to-purple-600",
-    },
-    {
-      Icon: FaPython,
-      name: "Python",
-      bgGradient: "from-blue-400 to-yellow-400",
-    },
-    {
-      Icon: SiFirebase,
-      name: "Firebase",
-      bgGradient: "from-yellow-400 to-red-300",
-    },
-  ];
-
   return (
     <section className="bg-[#111827]">
       <div className="w-10/12 md:w-10/12 lg:w-8/12 mx-auto text-white py-8">
@@ -66,7 +14,7 @@ const Technologies = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-white p-6">
           {Technolgoies.map((stacks, index) => {
-            const { Icon, name, color, bgGradient } = stacks;
+            const { Icon, name, bgGradient } = stacks;
 
             return (
               <div
