@@ -5,7 +5,7 @@ export const Education = [
     logo: UTULogo,
     course: "MSc. Software Engineering",
     date: "Aug. 2025 - Ongoing",
-    institution: "University of Turku",
+    institution: "University of Turku, Finland.",
     description:
       "descriptionfkjdndjgntrgihututdjdnjnjdjdjrututrhuitrgtrtrsgteyyuiiughbnjfbgdjbgfdjbfbgffgu",
   },
@@ -13,7 +13,7 @@ export const Education = [
     logo: UILogo,
     course: "BSc. Information and Communication Science",
     date: "Oct. 2018  -  Oct. 2023",
-    institution: "University of Ilorin",
+    institution: "University of Ilorin, Nigeria",
     description: "description",
   },
 ];

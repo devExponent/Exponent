@@ -10,7 +10,7 @@ const NavBar = () => {
   }
   return (
     <>
-      <div className="text-white bg-[#19294a67] flex items-center py-6 px-14 justify-between sticky top-0">
+      <div className="text-white bg-[#19294ae1] flex items-center py-6 px-14 justify-between sticky top-0">
         <div className="">
           <h1 className="font-bold text-3xl">Okunlola Muhammad</h1>
         </div>

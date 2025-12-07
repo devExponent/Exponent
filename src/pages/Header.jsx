@@ -8,7 +8,6 @@ const Header = () => {
     <div className="bg-[#111827]">
       <NavBar />
       <Aboutme />
-      <Section1 />
     </div>
   );
 };
