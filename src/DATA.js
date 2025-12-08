@@ -1,5 +1,10 @@
 import UILogo from "../src/assets/unilorin logo.png";
 import UTULogo from "../src/assets/UTU logo.png";
+import CTMIS from "../src/assets/CTMIS.png";
+import EduLearn from "../src/assets/EduLearn.png";
+import CertifyCheck from "../src/assets/CertifyCheck.png";
+import MakeaDua from "../src/assets/MakeaDua";
+import SleepsStiq from "../src/assets/SleepStiq.png";
 
 import { FaReact, FaPython } from "react-icons/fa";
 import {
@@ -9,6 +14,8 @@ import {
   SiJavascript,
   SiTypescript,
   SiNextdotjs,
+  SiBootstrap,
+  SiMysql,
 } from "react-icons/si";
 export const Education = [
   {
@@ -74,10 +81,38 @@ export const Technolgoies = [
 
 export const Projects = [
   {
-    image: "",
-    name: "",
+    image: CTMIS,
+    name: "CTMIS",
     stack: "",
     description: "",
-    link: "",
+    link: "https://ctmis.vercel.app/",
+  },
+  {
+    image: EduLearn,
+    name: "EduLearn",
+    stack: "",
+    description: "",
+    link: "https://edu-learn.vercel.app/",
+  },
+  {
+    image: SleepsStiq,
+    name: "SleepStiq",
+    stack: "",
+    description: "",
+    link: "https://sleepstiq.vercel.app/",
+  },
+  {
+    image: CertifyCheck,
+    name: "CertifyCheck",
+    stack: "",
+    description: "",
+    link: "https://cvp-pi.vercel.app/",
+  },
+  {
+    image: MakeaDua,
+    name: "MakeaDua",
+    stack: "",
+    description: "",
+    link: "https://makea-dua.vercel.app/",
   },
 ];
