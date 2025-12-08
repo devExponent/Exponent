@@ -3,7 +3,7 @@ import UTULogo from "../src/assets/UTU logo.png";
 import CTMIS from "../src/assets/CTMIS.png";
 import EduLearn from "../src/assets/EduLearn.png";
 import CertifyCheck from "../src/assets/CertifyCheck.png";
-import MakeaDua from "../src/assets/MakeaDua";
+import MakeaDua from "../src/assets/MakeaDua.png";
 import SleepsStiq from "../src/assets/SleepStiq.png";
 
 import { FaReact, FaPython } from "react-icons/fa";
@@ -16,6 +16,7 @@ import {
   SiNextdotjs,
   SiBootstrap,
   SiMysql,
+  SiHtml5,
 } from "react-icons/si";
 export const Education = [
   {
@@ -83,35 +84,36 @@ export const Projects = [
   {
     image: CTMIS,
     name: "CTMIS",
-    stack: "",
+    stack: [FaReact, SiTailwindcss, SiFirebase],
     description: "",
     link: "https://ctmis.vercel.app/",
   },
   {
     image: EduLearn,
     name: "EduLearn",
-    stack: "",
+    stack: [SiHtml5, SiJavascript, SiBootstrap, SiMysql, FaPython],
     description: "",
     link: "https://edu-learn.vercel.app/",
   },
   {
-    image: SleepsStiq,
-    name: "SleepStiq",
-    stack: "",
-    description: "",
-    link: "https://sleepstiq.vercel.app/",
-  },
-  {
     image: CertifyCheck,
     name: "CertifyCheck",
-    stack: "",
+    stack: [SiNextdotjs, SiTailwindcss, SiMysql, FaPython],
     description: "",
     link: "https://cvp-pi.vercel.app/",
   },
   {
+    image: SleepsStiq,
+    name: "SleepStiq",
+    stack: [SiHtml5, SiJavascript, SiBootstrap],
+    description: "",
+    link: "https://sleepstiq.vercel.app/",
+  },
+
+  {
     image: MakeaDua,
     name: "MakeaDua",
-    stack: "",
+    stack: [SiHtml5, SiJavascript, SiBootstrap, SiMysql, FaPython],
     description: "",
     link: "https://makea-dua.vercel.app/",
   },
