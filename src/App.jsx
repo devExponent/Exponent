@@ -6,6 +6,7 @@ import MyEducation from "./pages/Education";
 import Technologies from "./pages/Technologies";
 import MyProjects from "./pages/Projects";
 import MyCertifications from "./pages/Certifications";
+import Footer from "./component/footer/Footer";
 
 function App() {
   const pvariant = {
@@ -29,6 +30,7 @@ function App() {
         <Technologies />
         <MyProjects />
         <MyCertifications />
+        <Footer />
         {/* <motion.div variants={pvariant} initial="hidden" animate="show">
           <motion.p
             className="text-white my-5"

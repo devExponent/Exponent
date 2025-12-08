@@ -146,6 +146,7 @@ export const Certifications = [
     image: HeedFinland,
     title: "Heed Finland Certificate",
   },
+  { image: AccessibilityCert, title: "Accessibility Certificate" },
   {
     image: JavaScriptCert,
     title: "JavaScript Certificate",
@@ -158,6 +159,4 @@ export const Certifications = [
     image: GitCert,
     title: "Git and Github Certificate",
   },
-
-  { image: AccessibilityCert, title: "Accessibility Certificate" },
 ];
