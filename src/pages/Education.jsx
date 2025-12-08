@@ -1,9 +1,9 @@
 import { Education } from "../DATA";
 import { FaGraduationCap } from "react-icons/fa";
 
-const Section1 = () => {
+const MyEducation = () => {
   return (
-    <section className="bg-[#19294ae1] py-8">
+    <section className="bg-[#19294ae1] py-15">
       <div className="w-10/12 md:w-10/12 lg:w-8/12 mx-auto text-white">
         <h1 className="text-center text-2xl md:text-3xl  lg:text-5xl flex justify-center gap-2 mb-8 font-extrabold text-white">
           <FaGraduationCap />
@@ -43,4 +43,4 @@ const Section1 = () => {
   );
 };
 
-export default Section1;
+export default MyEducation;

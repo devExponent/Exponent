@@ -3,7 +3,7 @@ import { Technolgoies } from "../DATA";
 const Technologies = () => {
   return (
     <section className="bg-[#111827]">
-      <div className="w-10/12 md:w-10/12 lg:w-8/12 mx-auto text-white py-8">
+      <div className="w-10/12 md:w-10/12 lg:w-8/12 mx-auto text-white py-[15rem]">
         <h1 className="text-center text-2xl md:text-3xl lg:text-5xl flex justify-center gap-2 mb-7 font-extrabold text-white">
           <FaCode /> My Tech Stack
         </h1>

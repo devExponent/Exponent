@@ -12,6 +12,7 @@ import JavaScriptCert from "../src/assets/JavaScriptCert.jpg";
 import ResearchCert from "../src/assets/ResearchCert.png";
 import ResponsiveCert from "../src/assets/ResponsiveCert.jpg";
 import SDACert from "../src/assets/SDACert.jpg";
+import HeedFinland from "../src/assets/HeedFinland.jpeg";
 
 import { FaReact, FaPython } from "react-icons/fa";
 import {
@@ -131,4 +132,32 @@ export const Projects = [
   },
 ];
 
-export const Certifications = [];
+export const Certifications = [
+  {
+    image: SDACert,
+    title: "Software Design and Architecture Certificate",
+  },
+  {
+    image: DesignCert,
+    title: "Evaluating Design with Users Certificate",
+  },
+
+  {
+    image: HeedFinland,
+    title: "Heed Finland Certificate",
+  },
+  {
+    image: JavaScriptCert,
+    title: "JavaScript Certificate",
+  },
+  {
+    image: ResponsiveCert,
+    title: "Responsive Web Design Certificate",
+  },
+  {
+    image: GitCert,
+    title: "Git and Github Certificate",
+  },
+
+  { image: AccessibilityCert, title: "Accessibility Certificate" },
+];

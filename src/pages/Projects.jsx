@@ -4,7 +4,7 @@ import { FaFolderOpen, FaArrowRight } from "react-icons/fa";
 const MyProjects = () => {
   return (
     <div className="bg-[#111827]">
-      <div className="w-full md:w-11/12 mx-auto text-white py-8">
+      <div className="w-full md:w-11/12 mx-auto text-white pb-[10rem]">
         <h1 className="text-center text-2xl md:text-3xl lg:text-5xl flex justify-center gap-2 mb-7 font-extrabold text-white">
           <FaFolderOpen /> My Projects
         </h1>
@@ -25,7 +25,7 @@ const MyProjects = () => {
                 </div>
                 <div className="flex justify-between my-3">
                   <ul className="flex gap-2  items-center">
-                    {projectsLists.stack.map((StacksIcon, index) => (
+                    {stack.map((StacksIcon, index) => (
                       <li key={index}>
                         <StacksIcon className="text-xl lg:text-2xl text-blue-300" />
                       </li>
