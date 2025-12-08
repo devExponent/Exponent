@@ -5,6 +5,13 @@ import EduLearn from "../src/assets/EduLearn.png";
 import CertifyCheck from "../src/assets/CertifyCheck.png";
 import MakeaDua from "../src/assets/MakeaDua.png";
 import SleepsStiq from "../src/assets/SleepStiq.png";
+import AccessibilityCert from "../src/assets/AccessibilityCert.png";
+import DesignCert from "../src/assets/DesignCert.png";
+import GitCert from "../src/assets/GitCert.jpg";
+import JavaScriptCert from "../src/assets/JavaScriptCert.jpg";
+import ResearchCert from "../src/assets/ResearchCert.png";
+import ResponsiveCert from "../src/assets/ResponsiveCert.jpg";
+import SDACert from "../src/assets/SDACert.jpg";
 
 import { FaReact, FaPython } from "react-icons/fa";
 import {
@@ -85,36 +92,43 @@ export const Projects = [
     image: CTMIS,
     name: "CTMIS",
     stack: [FaReact, SiTailwindcss, SiFirebase],
-    description: "",
+    description:
+      "A digital system that helps organizations manage transport activities by supporting user registration, trip booking, vehicle coordination, and live booking management.",
     link: "https://ctmis.vercel.app/",
   },
   {
     image: EduLearn,
     name: "EduLearn",
-    stack: [SiHtml5, SiJavascript, SiBootstrap, SiMysql, FaPython],
-    description: "",
+    stack: [SiHtml5, SiBootstrap, SiJavascript, SiMysql, FaPython],
+    description:
+      "A platform that lets students register, explore courses, and access learning content online. It integrates user-friendly navigation and responsive design to support flexible, self-paced education.",
     link: "https://edu-learn.vercel.app/",
   },
   {
     image: CertifyCheck,
     name: "CertifyCheck",
     stack: [SiNextdotjs, SiTailwindcss, SiMysql, FaPython],
-    description: "",
+    description:
+      "Certificate Verification Portal streamlines authenticating academic credentials for institutions and employers.",
     link: "https://cvp-pi.vercel.app/",
   },
   {
     image: SleepsStiq,
     name: "SleepStiq",
     stack: [SiHtml5, SiJavascript, SiBootstrap],
-    description: "",
+    description:
+      "A website where users can explore and buy health and wellness items effortlessly, supported by an intuitive and responsive design.",
     link: "https://sleepstiq.vercel.app/",
   },
 
   {
     image: MakeaDua,
     name: "MakeaDua",
-    stack: [SiHtml5, SiJavascript, SiBootstrap, SiMysql, FaPython],
-    description: "",
+    stack: [SiHtml5, SiBootstrap, SiJavascript, SiMysql, FaPython],
+    description:
+      "An online space that turns personal prayers into a shared experience, helping users reflect, save, and inspire while connecting with a spiritual community",
     link: "https://makea-dua.vercel.app/",
   },
 ];
+
+export const Certifications = [];

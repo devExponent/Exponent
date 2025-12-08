@@ -1,5 +1,5 @@
 import { Projects } from "../DATA";
-import { FaFolderOpen } from "react-icons/fa";
+import { FaFolderOpen, FaArrowRight } from "react-icons/fa";
 
 const MyProjects = () => {
   return (
@@ -23,7 +23,7 @@ const MyProjects = () => {
                     className="w-full h-32 sm:h-40 md:h-48  object-cover rounded-md"
                   />
                 </div>
-                <div className="flex justify-between my-2">
+                <div className="flex justify-between my-3">
                   <ul className="flex gap-2  items-center">
                     {projectsLists.stack.map((StacksIcon, index) => (
                       <li key={index}>
@@ -31,8 +31,16 @@ const MyProjects = () => {
                       </li>
                     ))}
                   </ul>
-                  <div>dkfdjfj</div>
+                  <a
+                    href={link}
+                    target="_blank"
+                    className="text-blue-300 flex gap-1 items-center"
+                  >
+                    View project <FaArrowRight />
+                  </a>
                 </div>
+                <h2 className="font-bold">{name}</h2>
+                <p>{description}</p>
               </div>
             );
           })}
