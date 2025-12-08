@@ -5,7 +5,7 @@ const MyCertifications = () => {
   return (
     <div>
       <div className="bg-[#19294ae1]">
-        <div className="w-full md:w-11/12 mx-auto text-white py-8">
+        <div className="w-full md:w-10/12 mx-auto text-white py-8">
           <h1 className="text-center text-2xl md:text-3xl lg:text-5xl flex justify-center gap-2 mb-7 font-extrabold text-white">
             <FaCertificate /> Certifications
           </h1>
