@@ -40,7 +40,7 @@ const Footer = () => {
           Muhammad Toyeeb Okunlola.
         </p>
         <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed font-bold text-gray-200">
-          A Frontend Software Engineer in growth mode.
+          Frontend Software Engineer.
         </p>
         <div>
           <p>Turning ideas into responsive and reliable web products.</p>

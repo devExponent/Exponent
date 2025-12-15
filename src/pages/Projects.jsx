@@ -27,7 +27,7 @@ const MyProjects = () => {
                   <ul className="flex gap-2  items-center">
                     {stack.map((StacksIcon, index) => (
                       <li key={index}>
-                        <StacksIcon className="text-xl lg:text-2xl text-blue-300" />
+                        <StacksIcon className="text-xl lg:text-3xl text-blue-300" />
                       </li>
                     ))}
                   </ul>
