@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 
 const MyProjects = () => {
   const projectvariant = {
-    hidden: {
-      opacity: 0,
-      y: -100,
-    },
+    hidden: {},
     show: {
       opacity: 1,
       y: 0,
@@ -15,6 +12,7 @@ const MyProjects = () => {
         duration: 1,
       },
     },
+
     // hidden: {},
     // show: {
     //   opacity: 1,
@@ -59,31 +57,36 @@ const MyProjects = () => {
                 className="bg-[#00000038] border border-[#808080b2] p-3 rounded-lg"
                 key={index}
               >
-                <div>
-                  <img
-                    src={image}
-                    alt={name}
-                    className="w-full h-32 sm:h-40 md:h-48  object-cover rounded-md"
-                  />
-                </div>
-                <div className="flex justify-between my-3">
-                  <ul className="flex gap-2  items-center">
-                    {stack.map((StacksIcon, index) => (
-                      <li key={index}>
-                        <StacksIcon className="text-xl lg:text-3xl text-blue-300" />
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href={link}
-                    target="_blank"
-                    className="text-blue-300 flex gap-1 items-center"
-                  >
-                    View project <FaArrowRight />
-                  </a>
-                </div>
-                <h2 className="font-bold">{name}</h2>
-                <p>{description}</p>
+                <motion.div
+                  whileHover={{ scale: 1.01 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div>
+                    <img
+                      src={image}
+                      alt={name}
+                      className="w-full h-32 sm:h-40 md:h-48  object-cover rounded-md"
+                    />
+                  </div>
+                  <div className="flex justify-between my-3">
+                    <ul className="flex gap-2  items-center">
+                      {stack.map((StacksIcon, index) => (
+                        <li key={index}>
+                          <StacksIcon className="text-xl lg:text-3xl text-blue-300" />
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href={link}
+                      target="_blank"
+                      className="text-blue-300 flex gap-1 items-center"
+                    >
+                      View project <FaArrowRight />
+                    </a>
+                  </div>
+                  <h2 className="font-bold">{name}</h2>
+                  <p>{description}</p>
+                </motion.div>
               </div>
             );
           })}
