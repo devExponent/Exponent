@@ -8,6 +8,7 @@ const NavBar = () => {
   function handleNavBar() {
     setOpenNavbar((prevNav) => !prevNav);
   }
+
   return (
     <>
       <div className="text-white bg-[#19294a] flex items-center py-6 px-14 justify-between sticky top-0 z-50">
@@ -39,11 +40,11 @@ const NavBar = () => {
 
       {/* Mobile Nav */}
       <div
-        className={`md:hidden bg-[#19294af1] fixed top-0 left-0 w-full h-96 z-40 overflow-auto transition-transform duration-300 ${
+        className={`md:hidden bg-[#19294af1] fixed top-0 left-0 w-full h-110 z-40 overflow-auto transition-transform duration-300 ${
           openNavBar ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <ul className="flex flex-col p-6 gap-6 text-white font-bold mt-20">
+        <ul className="flex flex-col p-6 gap-6 text-white font-bold mt-25">
           <NavItem href="#about" onClick={() => setOpenNavbar(false)}>
             Home
           </NavItem>

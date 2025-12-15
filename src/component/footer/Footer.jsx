@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub, FaTwitter, FaFileAlt } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import Button from "../Button";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const socialLinksStyle =
@@ -45,13 +46,22 @@ const Footer = () => {
         <p>Turning ideas into responsive and reliable web products.</p>
 
         <div className="my-6">
-          <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-100">
+          <motion.p
+            className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-100"
+            animate={{ y: [0, -10, 0] }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
             Connect With Me.
-          </p>
+          </motion.p>
         </div>
         <div className="flex gap-4 mb-4 md:mb-0">
           <SocialMediaLinks links={links} />
         </div>
+
         <a
           href="https://www.google.com/maps/search/?api=1&query=Turku,Finland"
           target="_blank"
@@ -74,7 +84,7 @@ const Footer = () => {
         text-xl font-bold
       "
       >
-        <Button className=" bg-white flex gap-1 hover:bg-blue-500 hover:text-white">
+        <Button className=" bg-white flex gap-1 hover:bg-blue-500 hover:text-white items-center ">
           <FaFileAlt /> View Cv
         </Button>
       </a>

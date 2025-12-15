@@ -1,8 +1,23 @@
 import { FaCode } from "react-icons/fa";
 import { Technolgoies } from "../DATA";
+import { motion } from "framer-motion";
 const Technologies = () => {
+  const techVariant = {
+    hidden: {},
+    show: { transition: { staggerChildren: 0.15 } }, // delay between children
+  };
+  const boxVariant = {
+    hidden: { opacity: 0, y: 20 }, // start slightly below
+    show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  };
+
   return (
-    <section className="bg-[#111827]">
+    <motion.section
+      className="bg-[#111827]"
+      variants={techVariant}
+      initial="hidden"
+      whileInView="show"
+    >
       <div className="w-10/12 md:w-10/12 lg:w-8/12 mx-auto text-white py-[15rem]">
         <h1 className="text-center text-2xl md:text-3xl lg:text-5xl flex justify-center gap-2 mb-7 font-extrabold text-white">
           <FaCode /> My Tech Stack
@@ -17,7 +32,8 @@ const Technologies = () => {
             const { Icon, name, bgGradient } = stacks;
 
             return (
-              <div
+              <motion.div
+                variants={boxVariant}
                 className={`
                     relative p-6 sm:p-8 rounded-2xl border-4 border-black
                     bg-gradient-to-br ${bgGradient} 
@@ -33,12 +49,12 @@ const Technologies = () => {
                 <div className="text-sm sm:text-base md:text-lg font-bold text-white text-center drop-shadow-lg">
                   {name}
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
