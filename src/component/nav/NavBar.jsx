@@ -23,11 +23,11 @@ const NavBar = () => {
           <NavItem href="#projects">Projects</NavItem>
           <NavItem href="#certifications">Certifications</NavItem>
           <NavItem href="#contact">Contact</NavItem>
-          <li>
+          <a href="/public/cv.pdf" download>
             <Button className="transform transition duration-300 bg-white text-black hover:scale-110 hover:text-blue-600">
               Download CV
             </Button>
-          </li>
+          </a>
         </ul>
         <div className="md:hidden text-3xl z-20">
           {openNavBar ? (
