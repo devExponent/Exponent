@@ -34,7 +34,7 @@ const Footer = () => {
     },
   ];
   return (
-    <section className=" bg-gray-900">
+    <section className=" bg-gray-900" id="contact">
       <footer className=" text-white flex flex-col gap-1 w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-20">
         <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-100">
           Muhammad Toyeeb Okunlola.
@@ -45,7 +45,7 @@ const Footer = () => {
         <p>Turning ideas into responsive and reliable web products.</p>
 
         <div className="my-6">
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-100">
+          <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-100">
             Connect With Me.
           </p>
         </div>
@@ -63,7 +63,7 @@ const Footer = () => {
         </a>
       </footer>
       <a
-        href="/Muhammad_Toyeeb_Okunlola_CV.pdf"
+        href=""
         target="_blank"
         rel="noopener noreferrer"
         className="

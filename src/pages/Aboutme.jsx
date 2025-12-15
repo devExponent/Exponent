@@ -35,7 +35,10 @@ const Aboutme = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center">
+    <section
+      className="min-h-screen flex items-center justify-center"
+      id="about"
+    >
       <div className="w-10/12 lg:w-8/12 grid grid-cols-1  items-center mx-auto gap-5 md:grid-cols-2 text-white">
         <div className="order-2 md:order-1 flex flex-col gap-2">
           <p className="mb-2 text-sm text-[#2753b1] font-bold sm:text-lg">

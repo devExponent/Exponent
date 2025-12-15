@@ -18,10 +18,10 @@ const NavBar = () => {
         {/* Desktop nav */}
 
         <ul className="items-center gap-6 cursor-pointer font-bold hidden md:flex">
-          <NavItem>Home</NavItem>
-          <NavItem>Projects</NavItem>
-          <NavItem>Achievements</NavItem>
-          <NavItem>Contact</NavItem>
+          <NavItem href="#about">Home</NavItem>
+          <NavItem href="#projects">Projects</NavItem>
+          <NavItem href="#certifications">Certifications</NavItem>
+          <NavItem href="#contact">Contact</NavItem>
           <li>
             <Button className="transform transition duration-300 bg-white text-black hover:scale-110 hover:text-blue-600">
               Download CV
@@ -44,10 +44,18 @@ const NavBar = () => {
         }`}
       >
         <ul className="flex flex-col p-6 gap-6 text-white font-bold mt-20">
-          <NavItem>Home</NavItem>
-          <NavItem>Projects</NavItem>
-          <NavItem>Achievements</NavItem>
-          <NavItem>Contact</NavItem>
+          <NavItem href="#about" onClick={() => setOpenNavbar(false)}>
+            Home
+          </NavItem>
+          <NavItem href="#projects" onClick={() => setOpenNavbar(false)}>
+            Projects
+          </NavItem>
+          <NavItem href="#certifications" onClick={() => setOpenNavbar(false)}>
+            Certifications
+          </NavItem>
+          <NavItem href="#contact" onClick={() => setOpenNavbar(false)}>
+            Contact
+          </NavItem>
           <li>
             <Button className="transform transition duration-300 bg-white text-black hover:scale-110 hover:text-blue-600">
               Download CV

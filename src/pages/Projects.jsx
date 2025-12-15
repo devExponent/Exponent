@@ -3,7 +3,7 @@ import { FaFolderOpen, FaArrowRight } from "react-icons/fa";
 
 const MyProjects = () => {
   return (
-    <div className="bg-[#111827]">
+    <div className="bg-[#111827]" id="projects">
       <div className="w-full md:w-11/12 mx-auto text-white pb-[10rem]">
         <h1 className="text-center text-2xl md:text-3xl lg:text-5xl flex justify-center gap-2 mb-7 font-extrabold text-white">
           <FaFolderOpen /> My Projects
