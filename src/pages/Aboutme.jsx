@@ -84,7 +84,7 @@ const Aboutme = () => {
             design, and performance optimization.
           </p>
           <SocialMediaLinks links={links} />
-          <a href="/public/cv.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
             <Button className="transform transition duration-300 bg-blue-400  text-white hover:scale-110 hover:bg-black ">
               View CV
             </Button>

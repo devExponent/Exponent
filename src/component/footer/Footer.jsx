@@ -73,7 +73,7 @@ const Footer = () => {
         </a>
       </footer>
       <a
-        href="/public/cv.pdf"
+        href="/cv.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="
