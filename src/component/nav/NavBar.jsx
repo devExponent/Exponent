@@ -10,7 +10,7 @@ const NavBar = () => {
   }
   return (
     <>
-      <div className="text-white bg-[#19294ae1] flex items-center py-6 px-14 justify-between sticky top-0">
+      <div className="text-white bg-[#19294a] flex items-center py-6 px-14 justify-between sticky top-0 z-50">
         <div className="">
           <h1 className="font-bold text-3xl">Okunlola Muhammad</h1>
         </div>
@@ -39,11 +39,11 @@ const NavBar = () => {
 
       {/* Mobile Nav */}
       <div
-        className={`md:hidden   overflow-auto transition-all duration-700 ease-in-out ${
-          openNavBar ? "h-96" : "h-0"
+        className={`md:hidden bg-[#19294af1] fixed top-0 left-0 w-full h-96 z-40 overflow-auto transition-transform duration-300 ${
+          openNavBar ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <ul className="flex flex-col p-6 gap-6 bg-[#19294a67] text-white font-bold">
+        <ul className="flex flex-col p-6 gap-6 text-white font-bold mt-20">
           <NavItem>Home</NavItem>
           <NavItem>Projects</NavItem>
           <NavItem>Achievements</NavItem>

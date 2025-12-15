@@ -1,11 +1,11 @@
-import NavBar from "../component/nav/NavBar";
+// import NavBar from "../component/nav/NavBar";
 
 import Aboutme from "./Aboutme";
 
 const Header = () => {
   return (
     <div className="bg-[#111827]">
-      <NavBar />
+      {/* <NavBar /> */}
       <Aboutme />
     </div>
   );

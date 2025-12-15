@@ -35,15 +35,19 @@ const Footer = () => {
   ];
   return (
     <section className=" bg-gray-900">
-      <footer className=" text-white p-6 flex flex-col gap-2 w-11/12 md:w-10/12 lg:w-8/12 mx-auto">
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-100">
+      <footer className=" text-white flex flex-col gap-1 w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-20">
+        <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-100">
           Muhammad Toyeeb Okunlola.
         </p>
         <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed font-bold text-gray-200">
           Frontend Software Engineer.
         </p>
-        <div>
-          <p>Turning ideas into responsive and reliable web products.</p>
+        <p>Turning ideas into responsive and reliable web products.</p>
+
+        <div className="my-6">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-100">
+            Connect With Me.
+          </p>
         </div>
         <div className="flex gap-4 mb-4 md:mb-0">
           <SocialMediaLinks links={links} />
