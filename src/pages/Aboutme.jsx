@@ -2,6 +2,8 @@ import ProfileImg from "../assets/Profile.jpeg";
 import SocialMediaLinks from "../component/SocialMediaLinks";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import Button from "../component/Button";
+import { FiMapPin } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
 const Aboutme = () => {
   const socialLinksStyle =
     "bg-gray-700 p-3 rounded-full hover:bg-gray-600 transition-colors";
@@ -21,6 +23,12 @@ const Aboutme = () => {
     {
       icon: FaTwitter,
       url: "https://x.com/_adem0la",
+      size: 20,
+      className: socialLinksStyle,
+    },
+    {
+      icon: HiOutlineMail,
+      url: "https://mail.google.com/mail/?view=cm&fs=1&to=okunlolamuhammadtoyeeb1@gmail.com",
       size: 20,
       className: socialLinksStyle,
     },
@@ -50,6 +58,15 @@ const Aboutme = () => {
           <Button className="transform transition duration-300 bg-blue-400  text-white hover:scale-110 hover:bg-black ">
             View CV
           </Button>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Turku,Finland"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex  gap-1 mt-3"
+          >
+            <FiMapPin size={20} />
+            <span>Turku, Finland</span>
+          </a>
         </div>
         <div className="order-1 md:order-2 max-sm:mb-3">
           <div className="w-full aspect-square max-w-[350px] mx-auto">

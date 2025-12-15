@@ -41,7 +41,7 @@ export const Education = [
     date: "Oct. 2018  -  Oct. 2023",
     institution: "University of Ilorin, Nigeria",
     description:
-      "Graduated as the top student among more than 160 peers with the highest CGPA and received the Outstanding Student of the Year award. Gained strong expertise in data structures and algorithm, system analysis and design, programming, data analysis, and user experience through rigorous coursewor    k and hands-on project work. Built a solid foundation in software engineering with both theoretical depth and practical problem solving skills.",
+      "Graduated as the top student among more than 160 peers with the highest CGPA and received the Outstanding Student of the Year award. Gained strong expertise in data structures and algorithm, system analysis and design, programming, data analysis, and user experience through rigorous coursework and hands-on project work. Built a solid foundation in software engineering with both theoretical depth and practical problem solving skills.",
   },
 ];
 
