@@ -33,10 +33,10 @@ function App() {
           <NavBar />
           <Header />
           <MyEducation />
-          {/* <Technologies /> */}
-          {/* <MyProjects /> */}
-          {/* <MyCertifications /> */}
-          {/* <Footer /> */}
+          <Technologies />
+          <MyProjects />
+          <MyCertifications />
+          <Footer />
         </>
       )}
     </AnimatePresence>
