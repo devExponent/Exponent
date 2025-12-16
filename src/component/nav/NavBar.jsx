@@ -57,11 +57,11 @@ const NavBar = () => {
           <NavItem href="#contact" onClick={() => setOpenNavbar(false)}>
             Contact
           </NavItem>
-          <li>
+          <a href="cv.pdf" download>
             <Button className="transform transition duration-300 bg-white text-black hover:scale-110 hover:text-blue-600">
               Download CV
             </Button>
-          </li>
+          </a>
         </ul>
       </div>
     </>
