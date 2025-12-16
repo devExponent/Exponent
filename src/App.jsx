@@ -16,7 +16,6 @@ function App() {
   useEffect(() => {
     const handleLoad = () => setLoading(false);
 
-    // If the page is already loaded, hide loader immediately
     if (document.readyState === "complete") {
       handleLoad();
     } else {
@@ -33,11 +32,11 @@ function App() {
         <>
           <NavBar />
           <Header />
-          <MyEducation />
-          <Technologies />
-          <MyProjects />
-          <MyCertifications />
-          <Footer />
+          {/* <MyEducation /> */}
+          {/* <Technologies /> */}
+          {/* <MyProjects /> */}
+          {/* <MyCertifications /> */}
+          {/* <Footer /> */}
         </>
       )}
     </AnimatePresence>

@@ -13,11 +13,6 @@ const MyEducation = () => {
     show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
 
-  // Parent variant with stagger
-  // const sectionVariant = {
-  //   hidden: {},
-  //   show: { transition: { staggerChildren: 0.3 } },
-  // };
   return (
     <motion.section
       className="bg-[#19294ae1] py-15"
