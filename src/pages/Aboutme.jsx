@@ -50,7 +50,7 @@ const Aboutme = () => {
 
   return (
     <motion.section
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center max-sm:py-20"
       id="about"
       variants={aboutvariant}
       initial="hidden"
