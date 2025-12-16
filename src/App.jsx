@@ -1,57 +1,46 @@
 import "./App.css";
 import NavBar from "./component/nav/NavBar";
-import { motion } from "framer-motion";
 import Header from "./pages/Header";
 import MyEducation from "./pages/Education";
 import Technologies from "./pages/Technologies";
 import MyProjects from "./pages/Projects";
 import MyCertifications from "./pages/Certifications";
 import Footer from "./component/footer/Footer";
+import Loader from "./component/Loader";
+import { AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 
 function App() {
-  const pvariant = {
-    hidden: {
-      opacity: 0,
-    },
-    show: {
-      opacity: 1,
-      transition: {
-        // fixed typo here
-        staggerChildren: 0.25,
-      },
-    },
-  };
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const handleLoad = () => setLoading(false);
+
+    // If the page is already loaded, hide loader immediately
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
   return (
-    <section id="background">
-      <div>
-        <NavBar />
-        <Header />
-        <MyEducation />
-        <Technologies />
-        <MyProjects />
-        <MyCertifications />
-        <Footer />
-        {/* <motion.div variants={pvariant} initial="hidden" animate="show">
-          <motion.p
-            className="text-white my-5"
-            variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
-          >
-            adipisci ducimus distinctio suscipit, ullam voluptate unde quas?
-            Nobis illum a earum enim! Sunt architecto quos nulla praesentium
-            vel, deserunt quibusdam, quaerat eveniet ab fuga temporibus?{" "}
-          </motion.p>
-          <motion.p
-            className="text-white"
-            variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
-          >
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-            id, labore eligendi velit aperiam odio reiciendis quos temporibus
-            atque! Autem.
-          </motion.p>
-        </motion.div> */}
-      </div>
-    </section>
+    <AnimatePresence>
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <NavBar />
+          <Header />
+          <MyEducation />
+          <Technologies />
+          <MyProjects />
+          <MyCertifications />
+          <Footer />
+        </>
+      )}
+    </AnimatePresence>
   );
 }
 
