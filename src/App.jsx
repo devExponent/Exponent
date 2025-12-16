@@ -32,7 +32,7 @@ function App() {
         <>
           <NavBar />
           <Header />
-          {/* <MyEducation /> */}
+          <MyEducation />
           {/* <Technologies /> */}
           {/* <MyProjects /> */}
           {/* <MyCertifications /> */}
