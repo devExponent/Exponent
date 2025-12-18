@@ -15,7 +15,7 @@ const MyProjects = () => {
 
     // hidden: {},
     // show: {
-    //   opacity: 1,
+    //   opacity: 1,zzzz
     //   y: [0, -10, 0],
     //   transition: {
     //     duration: 3,
