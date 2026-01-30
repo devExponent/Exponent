@@ -13,6 +13,7 @@ import ResearchCert from "../src/assets/ResearchCert.png";
 import ResponsiveCert from "../src/assets/ResponsiveCert.jpg";
 import SDACert from "../src/assets/SDACert.jpg";
 import HeedFinland from "../src/assets/HeedFinland.jpeg";
+import Earthangel from "../src/assets/Earthangel.png";
 
 import { FaReact, FaPython } from "react-icons/fa";
 import {
@@ -89,6 +90,15 @@ export const Technolgoies = [
 ];
 
 export const Projects = [
+  {
+    image: Earthangel,
+    name: "Earth Angels Finland",
+    stack: [SiTypescript, SiTailwindcss, SiFirebase, SiFramer],
+    description:
+      "Earth Angels Finland is a bilingual (EN/FI) community and events platform that showcases the organization’s mission, highlights annual “Say It Loud” Black History Month programs, and helps visitors explore events, learn about the work, and contact the team to get involved.",
+    link: "https://earthangelsfinland.vercel.app/",
+  },
+
   {
     image: CTMIS,
     name: "CTMIS",
