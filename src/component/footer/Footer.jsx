@@ -73,7 +73,7 @@ const Footer = () => {
         </a>
       </footer>
       <a
-        href="/Muhammad Okunlola.pdf"
+        href="/Okunlola.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="
